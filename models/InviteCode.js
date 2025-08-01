@@ -1,0 +1,1 @@
+const mongoose = require('mongoose');const InviteCodeSchema = new mongoose.Schema({  code: { type: String, required: true, unique: true },  userId: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'User' },  expiresAt: { type: Date }});module.exports = mongoose.model('InviteCode', InviteCodeSchema);

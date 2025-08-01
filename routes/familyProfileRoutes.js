@@ -1,0 +1,1 @@
+const express = require('express');const router = express.Router();const controller = require('../controllers/familyProfileController');router.post('/', controller.createFamilyProfile);router.get('/:id', controller.getFamilyProfile);module.exports = router;

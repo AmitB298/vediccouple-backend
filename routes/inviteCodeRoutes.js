@@ -1,0 +1,1 @@
+const express = require('express');const router = express.Router();const controller = require('../controllers/inviteCodeController');router.post('/', controller.createInviteCode);router.get('/:code', controller.validateInviteCode);module.exports = router;
